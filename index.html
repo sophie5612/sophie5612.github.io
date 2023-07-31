@@ -1,32 +1,65 @@
-<!-- Define document to be HTML5 -->
-<!DOCTYPE html> 
-<!-- Root element of HTML page -->
-<html lang="en">
-<!-- Collection of metadata -->
-<head>
-    <!-- Title tag represents the document title / name -->
-    <title>Sophie Azula</title>
-    <meta charset="UTF-8">
-    <!-- Give hint about the size of the initial size of the viewport (part of the document seen on a screen) 
-        Note: only used by mobile devices) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="./hi.css" /> 
-    <!-- Embed style information using style tag -->
-    <!-- <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style> -->
+<!-- Personal website of Sophie Azula, to be used to display projects and as an HTML study guide -->
+
+<!DOCTYPE html> <!-- Define document to be HTML5 -->
+<html lang="en-US">
+<!-- 'html' tag is the root element of HTML page. Note: For 'lang' attribute, the first two characters (en) define the language, last two (US) define the coutnry-->
+
+<head> <!-- 'head' tag holds a collection of metadata -->
+  <title>Sophie Azula</title> <!-- 'title' tag represents the document title / name (appears in browser tab)-->
+  <meta charset="UTF-8"> <!-- IDK actually -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Give hint about the size of the initial size of the viewport (part of the document seen on a screen.) Note: only used by mobile devices) -->
+  <link rel="stylesheet" type="text/css" href="./styles.css" /> <!-- Link to a CSS sheet to define styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Adding Google font link -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
 </head>
 
+<body> <!-- 'body' tag holds the content of the document -->
+    <header><!-- 'header' tag holds introductory content -->
+      <h1 title="Welcome!"> Sophie Azula </h1> <!-- 'title' attribute defines text on hover -->
+      <nav> <!-- 'nav' tag holds the section with page navigation links -->
+        <ul>
+          <li><a href="./About.html"> About </a></li>
+          <li><a href="./Projects.html"> Projects </a></li>
+          <li><a href="./Resume.html"> Resume </a></li>
+          <li><a href="./Workspace.html"> Workspace </a></li>
+          <li><a href="./Notes.html"> Notes </a></li>
+        </ul>
+      </nav>
 
-<!-- The content of the document -->
-<body>
-  <div class="super-cool-div">
-    <h1>Sophie's Website</h1>
-    <p>A website made by Sophie Azula.</p>
-    <h3>Testing!!</h3>
-  </div>
+    </header>
+
+    <main> <!-- 'main' tag represents the main content of the body -->
+    <div class="container-mine">
+      <p title=>A website made by Sophie Azula.</p> <!-- 'paragraph' tags always start on a new line and browser adds margin before and after -->
+      <h3>Testing!!</h3> <!-- Heading tags are used to index and structure content of web page by search engine -->
+      <pre style="background-color: aquamarine;"> <!-- 'pre' tag holds pre-defined text. Note: 'style' attribute can be used to style an element in-line -->
+      My Bonnie lies over the ocean.
+    
+      My Bonnie lies over the sea.
+    
+      My Bonnie lies over the ocean.
+    
+      Oh, bring back my Bonnie to me.
+
+      My Bonnie lies over the ocean.
+    
+      My Bonnie lies over the sea.
+    
+      My Bonnie lies over the ocean.
+    
+      Oh, bring back my Bonnie to me.
+
+      My Bonnie lies over the ocean.
+    
+      My Bonnie lies over the sea.
+    
+      My Bonnie lies over the ocean.
+    
+      Oh, bring back my Bonnie to me.
+    </pre>
+    </div>
+  </main>
 </body>
 </html>
-
