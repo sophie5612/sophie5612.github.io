@@ -46,7 +46,6 @@ header {
     right:0;
     padding: calc(8px + 1.5625vw); /* Using "Magic formula" for responsive padding. Reference: https://matthewjamestaylor.com/responsive-padding */
     border-bottom: 4px solid hsl(0, 0%, 0%);/* Reference: https://www.digitalocean.com/community/tutorials/how-to-load-and-use-custom-fonts-with-css  */
-    margin-bottom: 4px;
 }
 
 header h1 {
