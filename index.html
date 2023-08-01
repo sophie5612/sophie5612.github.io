@@ -10,27 +10,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Give hint about the size of the initial size of the viewport (part of the document seen on a screen.) Note: only used by mobile devices) -->
   <link rel="stylesheet" type="text/css" href="./styles.css" /> <!-- Link to a CSS sheet to define styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Adding Google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body> <!-- 'body' tag holds the content of the document -->
     <header><!-- 'header' tag holds introductory content -->
-      <h1 title="Welcome!"> Sophie Azula </h1> <!-- 'title' attribute defines text on hover -->
-      <nav> <!-- 'nav' tag holds the section with page navigation links -->
-        <ul>
-          <li><a href="./About.html"> About </a></li>
-          <li><a href="./Projects.html"> Projects </a></li>
-          <li><a href="./Resume.html"> Resume </a></li>
-          <li><a href="./Workspace.html"> Workspace </a></li>
-          <li><a href="./Notes.html"> Notes </a></li>
-        </ul>
-      </nav>
+      
+      <div class="nav-container">
+        <!-- Using '&nbsp' for non-breaking space -->
+        <h1 title="Welcome!"> Sophie&nbspAzula </h1> <!-- 'title' attribute defines text on hover -->
+        <nav> <!-- 'nav' tag holds the section with page navigation links -->
+          <ul>
+            <li><a href="./About.html"> About </a></li>
+            <li><a href="./Projects.html"> Projects </a></li>
+            <li><a href="./Resume.html"> Resume </a></li>
+            <li><a href="./Workspace.html"> Workspace </a></li>
+            <li><a href="./Notes.html"> Notes </a></li>
+          </ul>
+        </nav>
+    </div>
 
     </header>
 
-    <main> <!-- 'main' tag represents the main content of the body -->
+    <!-- <main> 'main' tag represents the main content of the body -->
     <div class="container-mine">
       <p title=>A website made by Sophie Azula.</p> <!-- 'paragraph' tags always start on a new line and browser adds margin before and after -->
       <h3>Testing!!</h3> <!-- Heading tags are used to index and structure content of web page by search engine -->
@@ -60,6 +64,6 @@
       Oh, bring back my Bonnie to me.
     </pre>
     </div>
-  </main>
+  <!-- </main> -->
 </body>
 </html>
