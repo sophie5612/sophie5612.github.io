@@ -34,75 +34,55 @@
     </div>
   </header>
 
+  
+
   <main> <!--main' tag represents the main content of the body -->
     <div class="container">
       <!-- <p style="padding-top: 5px;"> A website made by Sophie Azula.</p> -->
       <!-- 'paragraph' tags always start on a new line and browser adds margin before and after -->
-      <h2>About this page</h2>
+      <h2>About this website</h2>
       <!-- Heading tags are used to index and structure content of web page by search engine -->
       <div class="introduction-container">
         <p clas="bio"> <!-- '&emsp' for tab space -->
-          &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
-          I made this page to display my work and familiarize myself with pure HTML & CSS.
-          <br>&emsp;Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
+          &emsp;Hi! My name is Sophie Azula, and I'm a senior in college, studying Computer Science.
+          I made this website to display my work and familiarize myself with pure HTML & CSS.
+          <br>&emsp;Admittedly, I've never been a fan of styling layouts, and this was a little more challenging than I thought.
           That being said, I've done my best to make this a reactive layout and follow accessibility standards.
           Feel free to get in contact with me and send your feedback!
         </p>
         <img class="portrait" src="./images/BitBuilderMe.png"
-          alt="Pixel portrait of tan girl with brown hair weraing a pink shirt">
+          alt="Pixel portrait of tan girl with brown hair weraing a pink shirt" onclick="alert('Hello!')"> <!-- Using an in-line HTML JavaScript function to send an alert to screen when image is clicked  -->
       </div>
 
-      <h2>Hi</h2>
-
-
-      <p>
-        &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
-        I made this page to display my work and familiarize myself with HTML & CSS.
-        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
-        That being said, I've done my best to make this a reactive layout and follow accessibility standards.
-        Feel free to get in contact with me and give feedback!
-      </p>
-
-      <p>
-        &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
-        I made this page to display my work and familiarize myself with HTML & CSS.
-        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
-        That being said, I've done my best to make this a reactive layout and follow accessibility standards.
-        Feel free to get in contact with me and give feedback!
-      </p>
-
-      <p>
-        &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
-        I made this page to display my work and familiarize myself with HTML & CSS.
-        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
-        That being said, I've done my best to make this a reactive layout and follow accessibility standards.
-        Feel free to get in contact with me and give feedback!
-      </p>
-
-      <p>
-        &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
-        I made this page to display my work and familiarize myself with HTML & CSS.
-        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
-        That being said, I've done my best to make this a reactive layout and follow accessibility standards.
-        Feel free to get in contact with me and give feedback!
-      </p>
-
-      <p>
-        &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
-        I made this page to display my work and familiarize myself with HTML & CSS.
-        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
-        That being said, I've done my best to make this a reactive layout and follow accessibility standards.
-        Feel free to get in contact with me and give feedback!
-      </p>
+      <h2>About me</h2>
+      <container>
+      <table>
+        <tr onclick="toggleRow(this)"> <!--'tr' tag represents a row of cells -->
+          <th>Name: </th> <!--'th' tag represents the header cell -->
+          <td>Sophie Azula</td> <!--'td' tag represents a data cell -->
+        </tr>
+        <tr>
+          <th>Hometown:</th>
+          <td> Richmond, Virginia</td>
+        </tr>
+        <tr>
+        <tr>
+          <th>Interests:</th>
+          <td>Web Application development</td>
+          <td> Artificial Intelligence</td>
+          <td>Human-Computer Interaction</td>
+        </tr>
+      </table>
+    </container>
 
     </div>
   </main>
   <footer>
     <div class="footer-container">
-      <ul> 
+      <ul>
         <!-- All SVGs from: https://www.svgrepo.com/ -->
         <li class="contact-icon"> <a href="sms:8044677277"> <img src="./images/iMessageLogo.svg"/> </a></li>
-        <li class="contact-icon"> <a href="mailto:sophieazula@gmail.com"> <img src="./images/GMailLogo.svg"/> </a></li>
+        <li class="contact-icon"> <a href="mailto:sophieazula@gmail.com"> <img src="./images/GmailLogo.svg"/> </a></li>
         <li class="contact-icon"> <a href="https://www.linkedin.com/in/sophie-azula/"><img src="./images/LinkedInLogo.svg"> </a></li>
       </ul>
     </div>

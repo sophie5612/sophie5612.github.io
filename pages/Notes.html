@@ -32,19 +32,21 @@
     <main class="container">
         
         <h1>TODOs</h1>
-        <ul class="padded-list">
-            <li class="strike"> Page navigation (constant header w highlighted tab functionality) </li>
-            <li class="strike">Get nav header to be arranged properly </li>
+        <ul class="bullet-list" onclick="alert('Welcome')" ></ul>
+            <li><mark>Add projects to project page</mark></li>
             <li> Generate color pallete and use CSS vairables (where applicable) </li>
             <li> Download fonts and place in 'fonts' folder</li>
             <li> Organize file structure correctly (capital letters for folders/files? Camel case? Folders?)</li>
-            <li> Follow accesibility standards </li>
-            <li> Add icons to contact methods </li>
-            <li> Add icon to web page home tab </li>
+            <li> Check accesibility standards for each page </li>
+            <li> Make this page a classic 'TODO' checklist project using JavaScript </li>
+            <li class="strike"> Add icons for contact methods </li>
+            <li class="strike"> Add icon to web page home tab </li>
+            <li class="strike"> Page navigation (constant header w highlighted tab functionality) </li>
+            <li class="strike" >Get nav header to be arranged properly </li>
         </ul>
         <br>
         <h1>HTML Notes </h1>
-        <ul class="padded-list">
+        <ul class="bullet-list">
             <li><b>Bold text</li>
             <li><strong>Important text</li>
             <li><i>Italic text </i> </li>
@@ -63,11 +65,33 @@
             <ul> 
                 <!-- All SVGs from: https://www.svgrepo.com/ -->
                 <li class="contact-icon"> <a href="sms:8044677277"> <img src="../images/iMessageLogo.svg"/> </a></li>
-                <li class="contact-icon"> <a href="mailto:sophieazula@gmail.com"> <img src="../images/GMailLogo.svg"/> </a></li>
+                <li class="contact-icon"> <a href="mailto:sophieazula@gmail.com"> <img src="../images/GmailLogo.svg"/> </a></li>
                 <li class="contact-icon"> <a href="https://www.linkedin.com/in/sophie-azula/"><img src="../images/LinkedInLogo.svg"> </a></li>
               </ul>
         </div>
     </footer>
 </body>
 </html>
-   
+
+
+      <!-- JS script to toggle state of element on click -->
+      <!-- <script>
+        const toggleRow = (e) => {
+          e.getElementsByClassName('expanded-row-content')[0].classList.toggle('hide-row');
+          console.log(event)
+        }
+      </script> -->
+      <!-- Here starts the table hell -->
+      <!-- <table>
+        <tr onClick='toggleRow(this)'>
+          <th>H1</th>
+          <td>This is the non-expanded stuff </td>
+          <td class="expanded-row-content">This is supposed to be the expanded stuff</td>
+        </tr> -->
+        <!-- <tr>
+          <th> H2</th>
+          <td>This is the non-expanded stuff </td>
+          <td class="expanded-row-content">This is supposed to be the expanded stuff</td>
+        </tr> -->
+      <!-- </table> -->
+      <!-- Creating a table with Vertical headings (this is overkill but wanted to review tables) -->
