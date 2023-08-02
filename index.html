@@ -6,12 +6,12 @@
 
 <head> <!-- 'head' tag holds a collection of metadata -->
   <title>Sophie Azula</title> <!-- 'title' tag represents the document title / name (appears in browser tab)-->
-  <link rel="icon" type="image/x-icon" href="./favicon.ico"/> <!-- 'link' tag allows for linking of elements and resources -->
-  <link rel=“shortcut icon” href=“./favicon.ico” type=“image/x-icon”>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/> <!-- 'link' tag allows for linking of elements and resources -->
+  <link rel=“shortcut icon” href="./images/favicon.ico" type=“image/x-icon”>
   <meta charset="UTF-8"> <!-- IDK actually -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Give hint about the size of the initial size of the viewport (part of the document seen on a screen.) Note: only used by mobile devices) -->
-  <link rel="stylesheet" type="text/css" href="./styles.css" /> <!-- Link to a CSS sheet to define styles -->
+  <link rel="stylesheet" type="text/css" href="./style/styles.css" /> <!-- Link to a CSS sheet to define styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
 
   <main> <!--main' tag represents the main content of the body -->
     <div class="container">
-      <p style="padding-top: 5px;"> A website made by Sophie Azula.</p>
+      <!-- <p style="padding-top: 5px;"> A website made by Sophie Azula.</p> -->
       <!-- 'paragraph' tags always start on a new line and browser adds margin before and after -->
       <h2>About this page</h2>
       <!-- Heading tags are used to index and structure content of web page by search engine -->
@@ -61,10 +61,6 @@
         Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
         That being said, I've done my best to make this a reactive layout and follow accessibility standards.
         Feel free to get in contact with me and give feedback!
-      </p>
-
-      <p>
-
       </p>
 
       <p>
@@ -103,10 +99,11 @@
   </main>
   <footer>
     <div class="footer-container">
-      <ul>
-        <li> (804) 467-7277 </li>
-        <li> sophieazula@gmail.com </li>
-        <li><a href="https://www.linkedin.com/in/sophie-azula/">LinkedIn</a></li>
+      <ul> 
+        <!-- All SVGs from: https://www.svgrepo.com/ -->
+        <li class="contact-icon"> <a href="sms:8044677277"> <img src="./images/iMessageLogo.svg"/> </a></li>
+        <li class="contact-icon"> <a href="mailto:sophieazula@gmail.com"> <img src="./images/GMailLogo.svg"/> </a></li>
+        <li class="contact-icon"> <a href="https://www.linkedin.com/in/sophie-azula/"><img src="./images/LinkedInLogo.svg"> </a></li>
       </ul>
     </div>
   </footer>
