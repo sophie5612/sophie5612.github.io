@@ -1,78 +1,113 @@
 <!-- Personal website of Sophie Azula, to be used to display projects and as an HTML study guide -->
 
 <!DOCTYPE html> <!-- Define document to be HTML5 -->
-<html lang="en-US"> <!-- 'html' tag is the root element of HTML page. Note: For 'lang' attribute, the first two characters (en) define the language, last two (US) define the coutnry-->
+<html lang="en-US">
+<!-- 'html' tag is the root element of HTML page. Note: For 'lang' attribute, the first two characters (en) define the language, last two (US) define the coutnry-->
 
 <head> <!-- 'head' tag holds a collection of metadata -->
   <title>Sophie Azula</title> <!-- 'title' tag represents the document title / name (appears in browser tab)-->
   <meta charset="UTF-8"> <!-- IDK actually -->
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Give hint about the size of the initial size of the viewport (part of the document seen on a screen.) Note: only used by mobile devices) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Give hint about the size of the initial size of the viewport (part of the document seen on a screen.) Note: only used by mobile devices) -->
   <link rel="stylesheet" type="text/css" href="./styles.css" /> <!-- Link to a CSS sheet to define styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<div></div>
 <body> <!-- 'body' tag holds the content of the document -->
-    <header><!-- 'header' tag holds introductory content -->
-      <div class="nav-container">
-        <!-- Using '&nbsp' for non-breaking space -->
-        <h1 title="Welcome!"> Sophie&nbsp;Azula </h1> <!-- 'title' attribute defines text on hover -->
-        <nav> <!-- 'nav' tag holds the section with page navigation links -->
-          <ul>
-            <li><a href="./pages/About.html"> About </a></li>
-            <li><a href="./pages/Projects.html"> Projects </a></li>
-            <li><a href="./pages/Resume.html"> Resume </a></li>
-            <li><a href="./pages/Workspace.html"> Workspace </a></li>
-            <li><a href="./pages/Notes.html"> Notes </a></li>
-          </ul>
-        </nav>
+  <header><!-- 'header' tag holds introductory content -->
+    <div class="nav-container">
+      <!-- Using '&nbsp' for non-breaking space -->
+      <h1 title="Welcome!"> Sophie&nbsp;Azula </h1> <!-- 'title' attribute defines text on hover -->
+      <nav> <!-- 'nav' tag holds the section with page navigation links -->
+        <ul>
+          <li><a class="current-page"> Home </a></li>
+          <li><a href="./pages/Projects.html"> Projects </a></li>
+          <li><a href="./pages/Resume.html"> Resume </a></li>
+          <li><a href="./pages/Workspace.html"> Workspace </a></li>
+          <li><a href="./pages/Notes.html"> Notes </a></li>
+        </ul>
+      </nav>
     </div>
-    </header>
+  </header>
 
-    <main> <!--main' tag represents the main content of the body -->
+  <main> <!--main' tag represents the main content of the body -->
     <div class="container">
-      <p style="padding-top: 5px;"> A website made by Sophie Azula.</p> <!-- 'paragraph' tags always start on a new line and browser adds margin before and after -->
-      <h2>About this page</h2> <!-- Heading tags are used to index and structure content of web page by search engine -->
+      <p style="padding-top: 5px;"> A website made by Sophie Azula.</p>
+      <!-- 'paragraph' tags always start on a new line and browser adds margin before and after -->
+      <h2>About this page</h2>
+      <!-- Heading tags are used to index and structure content of web page by search engine -->
       <div class="introduction-container">
         <p clas="bio"> <!-- '&emsp' for tab space -->
           &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
-          I made this page to display my work and familiarize myself with HTML & CSS. 
-          Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought. 
+          I made this page to display my work and familiarize myself with HTML & CSS.
+          Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
           That being said, I've done my best to make this a reactive layout and follow accessibility standards.
           Feel free to get in contact with me and give feedback!
         </p>
-        <img class="portrait" src="./BitBuilder.png" alt="Pixel portrait of tan girl with brown hair weraing a pink shirt">
+        <img class="portrait" src="./BitBuilder.png"
+          alt="Pixel portrait of tan girl with brown hair weraing a pink shirt">
       </div>
 
-      <!-- <p>
+      <h2>Hi</h2>
+
+
+      <p>
         &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
-        I made this page to display my work and familiarize myself with HTML & CSS. 
-        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought. 
+        I made this page to display my work and familiarize myself with HTML & CSS.
+        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
+        That being said, I've done my best to make this a reactive layout and follow accessibility standards.
+        Feel free to get in contact with me and give feedback!
+      </p>
+
+      <p>
+
+      </p>
+
+      <p>
+        &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
+        I made this page to display my work and familiarize myself with HTML & CSS.
+        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
         That being said, I've done my best to make this a reactive layout and follow accessibility standards.
         Feel free to get in contact with me and give feedback!
       </p>
 
       <p>
         &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
-        I made this page to display my work and familiarize myself with HTML & CSS. 
-        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought. 
+        I made this page to display my work and familiarize myself with HTML & CSS.
+        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
         That being said, I've done my best to make this a reactive layout and follow accessibility standards.
         Feel free to get in contact with me and give feedback!
-      </p> -->
+      </p>
+
+      <p>
+        &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
+        I made this page to display my work and familiarize myself with HTML & CSS.
+        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
+        That being said, I've done my best to make this a reactive layout and follow accessibility standards.
+        Feel free to get in contact with me and give feedback!
+      </p>
+
+      <p>
+        &emsp;Hi! My name is Sophie Azula and I'm a senior in college, studying Computer Science.
+        I made this page to display my work and familiarize myself with HTML & CSS.
+        Admittadley, I've never been a fan of styling layouts, and this was more challenging than I thought.
+        That being said, I've done my best to make this a reactive layout and follow accessibility standards.
+        Feel free to get in contact with me and give feedback!
+      </p>
 
     </div>
   </main>
-
   <footer>
     <div class="footer-container">
-    <ul>
-      <li> (804) 467-7277 </li>
-      <li> sophieazula@gmail.com </li>
-      <li><a href="https://www.linkedin.com/in/sophie-azula/">LinkedIn</a></li>
-    </ul>
-  </div>
-</footer>
+      <ul>
+        <li> (804) 467-7277 </li>
+        <li> sophieazula@gmail.com </li>
+        <li><a href="https://www.linkedin.com/in/sophie-azula/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 </html>

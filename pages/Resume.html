@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>Resume</title>
-        <meta>
-    </head>
 
-    <body>
-        <h1>Resume</h1>
-    </body>
+<head> <!-- 'head' tag holds a collection of metadata -->
+    <title>Resume</title> <!-- 'title' tag represents the document title / name (appears in browser tab)-->
+    <meta charset="UTF-8"> <!-- IDK actually -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Give hint about the size of the initial size of the viewport (part of the document seen on a screen.) Note: only used by mobile devices) -->
+    <link rel="stylesheet" type="text/css" href="../styles.css" /> <!-- Link to a CSS sheet to define styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header><!-- 'header' tag holds introductory content -->
+        <div class="nav-container">
+            <!-- Using '&nbsp' for non-breaking space -->
+            <h1 title="Welcome!"> Sophie&nbsp;Azula </h1> <!-- 'title' attribute defines text on hover -->
+            <nav> <!-- 'nav' tag holds the section with page navigation links -->
+                <ul>
+                    <li><a href="../index.html"> Home </a></li>
+                    <li><a href="./Projects.html"> Projects </a></li>
+                    <li><a class="current-page"> Resume </a></li>
+                    <li><a href="./Workspace.html"> Workspace </a></li>
+                    <li><a href="./Notes.html"> Notes </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li> (804) 467-7277 </li>
+                <li> sophieazula@gmail.com </li>
+                <li><a href="https://www.linkedin.com/in/sophie-azula/">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
 </html>
