@@ -1,5 +1,5 @@
 /**
- * This is the script for the ChatGPT version of the chatbot
+ * This is the script for the Ally version of the chatbot
  */
 const chatbotToggler = document.querySelector(".chatbot-toggler");
 const closeBtn = document.querySelector(".close-btn");
@@ -8,47 +8,41 @@ const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 
 let userMessage = null; // Variable to store user's message
-// initialize userMessage to prompt the bot to respond in Rubik's cube assistant context
-let initialMessage = "You are a Rubik's cube solving chatbot assistant. Please respond to the conversation in a friendly, helpful tone.";
-const API_KEY = "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";
- // Paste your API key here
+// Track the current and previously sent messages
+let currentMessage, prevMessage = null;
 const inputInitHeight = chatInput.scrollHeight;
 
+/**
+ * THis fucntionshoud sodi afsj
+ * @param {*} message 
+ * @param {"incoming", "outgoing"} className Specify if the chat is ic
+ * @returns 
+ */
 const createChatLi = (message, className) => {
     // Create a chat <li> element with passed message and className
     const chatLi = document.createElement("li");
+    // assign styling className to the element 
     chatLi.classList.add("chat", `${className}`);
+    // if the chat is NOT labeled as "outgoing" then the chat content is populated with robot head icon (smart toy) before the paragraph tag
     let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
     chatLi.innerHTML = chatContent;
     chatLi.querySelector("p").textContent = message;
     return chatLi; // return chat <li> element
 }
 
-const generateResponse = (chatElement) => {
-    const API_URL = "https://api.openai.com/v1/chat/completions";
+const getResponse = (chatElement) => {
+    // Get the element that holds the chat
     const messageElement = chatElement.querySelector("p");
-
-    // Define the properties and message for the API request
-    const requestOptions = {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${API_KEY}`
-        },
-        body: JSON.stringify({
-            model: "gpt-3.5-turbo",
-            messages: [ {role: "system", content: initialMessage}, {role: "user", content: userMessage}],
-
-        })
-    }
+    messageElement.textContent = "Testing!!"
+    chatbox.scrollTo(0, chatbox.scrollHeight);
 
     // Send POST request to API, get response and set the reponse as paragraph text
-    fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
-        messageElement.textContent = data.choices[0].message.content.trim();
-    }).catch(() => {
-        messageElement.classList.add("error");
-        messageElement.textContent = "Oops! Something went wrong. Please try again.";
-    }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
+    // fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
+    //     messageElement.textContent = data.choices[0].message.content.trim();
+    // // }).catch(() => {
+    //     messageElement.classList.add("error");
+    //     messageElement.textContent = "Oops! Something went wrong. Please try again.";
+    // }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
 const handleChat = () => {
